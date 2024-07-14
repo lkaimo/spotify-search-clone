@@ -1,0 +1,131 @@
+input[type="text"] {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+    background-color: #282828;
+    /* Dark input background color */
+    color: #fff;
+    /* Light text color */
+    border: 1px solid #666;
+    /* Dark border color */
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 0;
+    }
+}
+
+#sidebar {
+    text-align: left;
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1DB954;
+    /* Dark background color */
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    /* Optional: Add shadow for depth */
+}
+
+#sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #fffcfc;
+    display: block;
+    transition: 0.3s;
+}
+
+#sidebar a:hover {
+    color: #555a5f;
+    /* Hover color */
+}
+
+#sidebar .close-btn {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    font-size: 30px;
+    color: #ffffff;
+    /* Close button color */
+    cursor: pointer;
+}
+
+.hamburger-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 25px;
+    cursor: pointer;
+    color: #1DB954;
+    /* Hamburger button color */
+    transition: color 0.3s
+}
+
+.hamburger-btn:hover {
+    color: #17af2b;
+    /* Change color on hover */
+    cursor: pointer;
+}
+
+#content {
+    transition: margin-left .5s;
+    padding: 16px;
+}
+
+h1 {
+    color: #1DB954;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px;
+    font-size: 16px;
+}
+
+#result {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.track {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    backdrop-filter: blur(0px) saturate(79%);
+    -webkit-backdrop-filter: blur(0px) saturate(79%);
+    background-color: rgba(59, 71, 56, 0.41);
+    /*            background-color: rgba(66, 106, 57, 0.41);
+*/
+    border: 1px solid rgba(255, 255, 255, 0.125);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+}
+
+.track:hover {
+    background-color: #1DB954;
+}
+
+.track img {
+    max-width: 250px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.search-link::after {
+    content: '\1F50D';
+    /* Unicode character for the magnifying glass icon */
+    margin-left: 5px;
+    /* Adjust the spacing between the text and the icon */
+}

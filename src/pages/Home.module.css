@@ -1,0 +1,88 @@
+body {
+    padding-top: 0px;
+    /* Adjust the height based on your navbar height */
+    text-align: center;
+    background-color: #121212;
+    /* Dark background color */
+    color: #fff;
+    /* Light text color */
+}
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+    /* Set the height to 100% of the viewport height */
+  }
+
+h1 {
+    color: #1DB954;
+}
+
+button {
+    cursor: pointer;
+    font-weight: 700;
+    font-family: Helvetica, "sans-serif";
+    transition: all .2s;
+    padding: 10px 20px;
+    border-radius: 100px;
+    background: white;
+    border: 1px solid transparent;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+
+button:hover {
+    background: #1DB954;
+}
+
+button svg {
+    width: 34px;
+    margin-left: 10px;
+    transition: transform .3s ease-in-out;
+}
+
+button:hover svg {
+    transform: translateX(5px);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+img {
+    max-width: 250px;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.search-link::after {
+    content: '\1F3E0';
+    /* Unicode character for the magnifying glass icon */
+    margin-left: 5px;
+    /* Adjust the spacing between the text and the icon */
+}
+
+.buttonlinks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    /* Adjust as needed for spacing between buttons */
+}
+
+.buttonlinks a {
+text-decoration: none; /* Remove underlines from the links */
+}
+
+.buttonlinks button {
+    margin: 10px;
+    /* Adjust as needed for spacing around each button */
+    text-align: center;
+    /* Center the text within the button */
+}

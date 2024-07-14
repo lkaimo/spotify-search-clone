@@ -1,0 +1,66 @@
+body {
+  background-color: #121212;
+  /* Dark background color */
+  color: #fff;
+  /* Light text color */
+  text-align: center;
+}
+
+h1 {
+  color: #1DB954;
+}
+
+input[type="text"] {
+  padding: 10px;
+  margin: 10px;
+  font-size: 16px;
+  background-color: #282828;
+  /* Dark input background color */
+  color: #fff;
+  /* Light text color */
+  border: 1px solid #666;
+  /* Dark border color */
+}
+
+#content {
+  transition: margin-left .5s;
+  padding: 16px;
+}
+
+#result {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  justify-content: center;
+}
+
+.albumfromsearch {
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  backdrop-filter: blur(0px) saturate(79%);
+  -webkit-backdrop-filter: blur(0px) saturate(79%);
+  background-color: rgba(66, 106, 57, 0.41);
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.albumfromsearch:hover {
+  background-color: #17af2b;
+}
+
+.albumfromsearch img {
+  max-width: 250px;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.search-link::after {
+  content: '\1F50D';
+  /* Unicode character for the magnifying glass icon */
+  margin-left: 5px;
+  /* Adjust the spacing between the text and the icon */
+}

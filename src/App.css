@@ -1,0 +1,74 @@
+/* App.css */
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  background-color: #1DB954;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  z-index: 998;
+  text-align: left;
+}
+
+.sidebar.collapsed {
+  width: 0px;
+}
+
+.sidebar ul {
+  padding: 0;
+  list-style: none;
+}
+
+.sidebar li {
+  transition: 0.3s;
+}
+
+.sidebar a {
+  text-decoration: none;
+  font-size: 18px;
+  color: #ffffff;
+  display: block;
+  padding: 10px 15px;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #ffffff;
+  background-color: #333;
+}
+
+
+.toggle-btn {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  font-size: 24px;
+  color: #ffffff;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999; /* Ensure the button is above the content */
+}
+
+#content {
+  margin: 15px auto;
+  padding: 15px;
+  transition: margin-left 0.5s;
+}
